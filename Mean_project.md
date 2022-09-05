@@ -1,18 +1,18 @@
 The summary of this project is to create a simple book register app on the internet using the MEAN web stack.
 
-M- mongodb it stores data and also act as the server in this instance
+M- mongodb It stores data and also act as the server in this instance
 
-Express- this is the back end framework of the application ie the developer side of the application. it reads to request from the clients from the database 
+Express- this is the back end framework of the application ie the developer side of the application. It reads to request from the clients from the database 
 
 Angular -this is the front end framework of the app ie the interactive part for client to use the app
 
-Node.js - this is the 
+Node.js - 
 
 lets go!
 
 # Install Node.js
 
-Aftervthe usually update of 'apt' 
+After the usually update of 'apt' 
 added certificates and initiated the installation of node.js 
 ```
 sudo apt update
@@ -37,13 +37,19 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/
 
 sudo apt install -y mongodb
 
+
 ```
+
 to verfified the installation and also to start the software, its good practce to run
 ```
 sudo service mongodb start
 
 sudo systemctl status mongodb
 ```
+
+
+![project4](https://github.com/AdebolaM/Project4/blob/main/images/mongodb%20working%20.png?raw=true)
+
 
 finally I installed npm and body-parser*
 
@@ -140,7 +146,7 @@ var bookSchema = mongoose.Schema( {
 var Book = mongoose.model('Book', bookSchema);
 module.exports = mongoose.model('Book', bookSchema);
 ```
-* although i dont know yet how to scrpit the syntax that i put in these files. i know i will get there in the end 
+* although I dont know yet how to scrpit the syntax that i put in these files. I know I will get there in the end 
 
 configuring the Forntend of the application includes accessing the routes with AngularJS
 
@@ -248,6 +254,12 @@ To start the server, I have return to the Books folder which is the home of all 
 
 the server is now runing on port 3300. so that I can access that on the internet, i will configure the security group on my AWS instance to allow for such inbound traffic. 
 
+![project4](https://github.com/AdebolaM/Project4/blob/main/images/server%20on%20internet.png?raw=true)
+
+
+![project4](https://github.com/AdebolaM/Project4/blob/main/images/final%20picture.png?raw=true)
+
+yay!
 
 
 
